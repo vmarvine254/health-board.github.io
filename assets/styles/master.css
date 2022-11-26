@@ -883,6 +883,8 @@ a {
 }
 
 .inpatient .card-title-wrapper {
+    height: max-content;
+    padding: 10px 20px;
     border-bottom: 1px solid var(--color-f1f1f1);
 }
 
@@ -1016,7 +1018,7 @@ tbody tr:hover {
 #common-diseases {
     width: 100%;
     height: 450px;
-    margin-left: 30px;
+    margin-top: 30px;
 }
 
 #common-diseases .card-title-wrapper {
@@ -1038,10 +1040,12 @@ tbody tr:hover {
 #common-diseases .more-options:hover {
     background: var(--color-f1f1f1);
 }
-#common-diseases .card-graph-wrapper{
+
+#common-diseases .card-graph-wrapper {
     width: 100%;
     height: 100%;
 }
+
 /* end:: page-body*/
 
 /* start:: page-body-queries*/
@@ -1062,6 +1066,7 @@ tbody tr:hover {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+        height: 45px;
     }
 
     .inpatient .card-title-wrapper>div {
@@ -1094,10 +1099,23 @@ tbody tr:hover {
         margin-left: 20px;
         margin-top: 0;
     }
+
+    .page-body-content .col-r-50-50 {
+        flex-direction: row;
+    }
+
+    #common-diseases {
+        margin-top: 0;
+        margin-left: 20px;
+    }
 }
 
 @media screen and (min-width:768px) {
     .page-body-content>.col-r-70-30>.w-30>#lab-alerts {
+        margin-left: 30px;
+    }
+
+    #common-diseases {
         margin-left: 30px;
     }
 }
